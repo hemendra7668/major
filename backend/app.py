@@ -77,21 +77,21 @@ def predict_from_rep(rep):
 
 @app.route("/")
 def index():
-    return send_from_directory("frontend", "landing.html")
+    return jsonify("hii, there u are on the home page")
 
-@app.route("/predict", methods=["POST"])
-def predict_single():
-    """
-    Accepts JSON with single-row features (Age,Gender,BMI,Derived_HRV,Derived_Pulse_Pressure,Derived_MAP)
-    Returns a single prediction (one set of vitals).
-    """
-    data = request.json or {}
-    try:
-        row = {f: float(data.get(f, 0.0)) for f in FEATURES}
-        resp = predict_from_rep(row)
-        return jsonify({"success": True, "predictions": resp})
-    except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 400
+# @app.route("/predict", methods=["POST"])
+# def predict_single():
+#     """
+#     Accepts JSON with single-row features (Age,Gender,BMI,Derived_HRV,Derived_Pulse_Pressure,Derived_MAP)
+#     Returns a single prediction (one set of vitals).
+#     """
+#     data = request.json or {}
+#     try:
+#         row = {f: float(data.get(f, 0.0)) for f in FEATURES}
+#         resp = predict_from_rep(row)
+#         return jsonify({"success": True, "predictions": resp})
+#     except Exception as e:
+#         return jsonify({"success": False, "error": str(e)}), 400
 
 @app.route("/predict_window", methods=["POST"])
 def predict_window():
