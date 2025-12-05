@@ -1,0 +1,120 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: bottom;
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  .card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+  }
+  
+  .robot-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #00f0ff;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .btn.ghost {
+    background: transparent;
+    border: 1px solid #00f0ff;
+    color: #00f0ff;
+  }
+  
+  .pulse-canvas {
+    background: #000;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: radial-gradient(circle at 10% 10%, #081229 0%, #071a2b 15%, #072833 45%, #0b3a4a 100%);
+  color: #e6f7ff;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 24px;
+  max-width: 1100px;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border-radius: 18px;
+  padding: 18px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(64,220,255,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,.6);
+}
+
+h1, h2 {
+  margin: 0 0 8px;
+  background: linear-gradient(90deg,#7efcff,#63ff9b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input, textarea {
+  width: 100%;
+  border-radius: 10px;
+  background: rgba(255,255,255,.035);
+  padding: 10px;
+  border: none;
+  color: #eaffff;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+  color: #9feefd;
+  font-size: 0.9rem;
+}
+
+.btn {
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(90deg,#00f0ff,#7dffb5);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(100,230,255,.25);
+  color: #9feefd;
+}

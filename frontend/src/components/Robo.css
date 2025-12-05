@@ -1,0 +1,46 @@
+body {
+  background:#071a2b;
+  color:#cfffff;
+  font-family:"Inter",sans-serif;
+}
+.page {
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.panel {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+.card {
+  background:#081a24;
+  padding:20px;
+  border-radius:14px;
+}
+label {display:block;margin-top:10px}
+input {
+  width:100%;padding:7px;border-radius:6px;
+  background:#031018;color:white;border:none;
+}
+.btn {
+  margin-top:12px;
+  width:100%;
+  padding:10px;
+  border-radius:10px;
+  background:#00f0ff;
+  border:none;
+  font-weight:bold;
+}
+.btn.ghost {background:transparent;color:#9feefd;border:1px solid #00f0ff}
+.result {margin-top:20px}
+.status {
+  margin-bottom:10px;
+  padding:6px 12px;
+  border-radius:50px;
+  background:#003344;
+}
+.status.warn {
+  background:#661111;
+}

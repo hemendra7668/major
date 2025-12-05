@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: system-ui, Arial;
+  background: linear-gradient(45deg, #001f3f, #005f73);
+}
+
+.app {
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  padding: 20px;
+  color: cyan;
+  font-size: 22px;
+  text-align: center;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  max-width: 700px;
+  font-size: 42px;
+}
+
+p {
+  max-width: 600px;
+  opacity: 0.8;
+  font-size: 17px;
+}
+
+.btn {
+  margin-top: 25px;
+  background: cyan;
+  color: black;
+  padding: 15px 35px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: white;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  background: bottom;
+}
