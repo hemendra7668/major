@@ -1,0 +1,23 @@
+{
+  "metrics": {
+    "mse": 23.404110787886268,
+    "r2": 0.33206777255050574
+  },
+  "features": [
+    "Age",
+    "Gender",
+    "BMI",
+    "Derived_HRV",
+    "Derived_Pulse_Pressure",
+    "Derived_MAP"
+  ],
+  "target_cols": [
+    "Heart Rate",
+    "Respiratory Rate",
+    "Body Temperature",
+    "Oxygen Saturation",
+    "Systolic Blood Pressure",
+    "Diastolic Blood Pressure"
+  ],
+  "csv": "/mnt/data/patient_vitals_project/raw_data/human_vital_signs_dataset_2024.csv"
+}
