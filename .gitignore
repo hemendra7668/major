@@ -1,3 +1,4 @@
 
-models/
-*.pkl
+
+node_modules/
+.env
